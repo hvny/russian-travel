@@ -13,6 +13,7 @@
 .page {
     background-color: #2A2C2F;
     font-family: 'Inter', sans-serif;
+    font-style: normal;
     text-rendering: optimizeLegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -27,7 +28,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 0 48px 0 48px;
-    margin: 0;
+    margin: 0 0 56px 0;
 }
 
 .header__logo {
@@ -46,15 +47,27 @@
     text-underline-offset: 5px;
 }
 
+.header__lang-link:hover {
+    opacity: 50%;
+}
+
 .header__lang-link_eng {
     margin: 0 0 0 18px;
     text-decoration: none;
 }
 
+
+/*lead section*/
+
+.lead {
+    width: fit-content;
+    margin: 0 auto 92px auto;
+    padding: 0;
+}
+
 .lead__title {
     width: 720px;
-    margin: 56px auto 32px auto;
-    border: 1px solid red;
+    margin: 0 auto 32px auto;
     text-align: center;
     font-size: 96px;
     font-weight: 900;
@@ -64,7 +77,6 @@
 .lead__subtitle {
     width: 640px;
     margin: 0 auto 64px auto;
-    border: 1px solid red;
     text-align: center;
     font-size: 30px;
     font-weight: 400;
@@ -72,6 +84,63 @@
 }
 
 .lead__image {
+    position: relative;
+    width: 984px;
+    height: 615px;
     margin: 0 auto 8px auto;
     background-image: url("./images/lead__pic.png");
+}
+
+.lead__route {}
+
+.lead__caption {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+
+/*intro section*/
+
+.intro {
+    padding: 0;
+    width: 984px;
+    margin: 0 auto 92px auto;
+    border: 1px solid red;
+}
+
+.intro__text-container {
+    width: min-content;
+}
+
+.intro__title {
+    width: max-content;
+    margin: 0 0 40px 0;
+    padding: 0;
+    font-size: 54px;
+    font-weight: 900;
+    line-height: 58px;
+}
+
+.intro__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 163%;
+    margin: 0 0 33px 0;
+}
+
+.intro__list {
+    list-style: none;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+.intro__list-item-number {
+    font-weight: 400;
 }
