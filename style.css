@@ -144,3 +144,18 @@
 .intro__list-item-number {
     font-weight: 400;
 }
+
+
+/*photo-grid section*/
+
+.photo-grid {
+    max-width: 1184px;
+    border: 1px solid red;
+    margin: 0 auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.photo-grid__item {}
