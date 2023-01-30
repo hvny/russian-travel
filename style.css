@@ -21,6 +21,7 @@
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     color: #ffffff;
+    padding: 0 0 24px 0;
 }
 
 .header {
@@ -60,7 +61,7 @@
 /*lead section*/
 
 .lead {
-    width: fit-content;
+    width: 984px;
     margin: 0 auto 92px auto;
     padding: 0;
 }
@@ -84,14 +85,8 @@
 }
 
 .lead__image {
-    position: relative;
-    width: 984px;
-    height: 615px;
     margin: 0 auto 8px auto;
-    background-image: url("./images/lead__pic.png");
 }
-
-.lead__route {}
 
 .lead__caption {
     font-size: 10px;
@@ -109,7 +104,6 @@
     padding: 0;
     width: 984px;
     margin: 0 auto 92px auto;
-    border: 1px solid red;
 }
 
 .intro__text-container {
@@ -150,12 +144,193 @@
 
 .photo-grid {
     max-width: 1184px;
-    border: 1px solid red;
-    margin: 0 auto 0 auto;
+    margin: 0 auto 92px auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
     justify-content: space-between;
     gap: 1em;
 }
 
-.photo-grid__item {}
+.places {
+    width: 984px;
+    margin: 0 auto 92px auto;
+}
+
+.place {
+    display: grid;
+    column-gap: 40px;
+    row-gap: 48px;
+    grid-template-columns: 460px, 484px;
+    grid-template-rows: fit-content 460px;
+    margin: 0 0 80px 0;
+}
+
+.place:last-of-type {
+    margin: 0;
+}
+
+.place__title {
+    margin: 0;
+    grid-row-start: 1;
+    align-self: end;
+    width: 460px;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 76px;
+}
+
+.place__image {
+    grid-column-start: 1;
+}
+
+.place__website {
+    grid-row-start: 1;
+    align-self: end;
+}
+
+.website__url-heading {
+    margin: 0 0 12px 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 2px;
+    color: #AAAAAA;
+}
+
+.website__link {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+.website__link:hover {
+    opacity: 0.8;
+}
+
+.place__text {
+    align-self: start;
+}
+
+.place__paragraph {
+    margin: 0 0 26px 0;
+    grid-column-start: 2;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 163%;
+}
+
+
+/*
+.cover {
+    padding: 0;
+    border: 1px solid red;
+    margin: 0 auto 0 auto;
+    max-width: 1184px;
+    height: 740px;
+    background-image: url("./images/coverPicture.png");
+    position: relative;
+    z-index: 0;
+}
+
+.cover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 0 0 / 0.3);
+    z-index: -1;
+}
+
+.cover:hover {
+    background-color: rgba(0 0 0 / 0.7);
+}*/
+
+.cover {
+    margin: 0 auto 92px auto;
+    max-width: 1184px;
+    position: relative;
+    z-index: 0;
+}
+
+.cover__background {
+    display: block;
+    position: relative;
+    max-width: 1184px;
+    height: 740px;
+    background-image: url("./images/coverPicture.png");
+    z-index: 0;
+}
+
+.cover__background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 0 0 / 0.3);
+    z-index: -1;
+}
+
+.cover__background:hover {
+    opacity: 0.8;
+}
+
+.cover__title {
+    margin: 0;
+    width: 560px;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 76px;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    top: 245px;
+    left: 312px;
+}
+
+.cover__subtitle {
+    margin: 0;
+    width: 360px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    position: absolute;
+    top: 429px;
+    left: 412px;
+    z-index: 1;
+}
+
+.footer {
+    width: fit-content;
+    margin: 0 auto 0 auto;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer__link {
+    margin: 0 18px 0 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer__copyright {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    margin: 0 0 0 533px;
+}
