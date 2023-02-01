@@ -7,7 +7,7 @@
 @import url("../blocks/header/__logo/header__logo.css");
 @import url("../blocks/header/lang-links/header__lang-links.css");
 @import url("../blocks/header/lang-link/header__lang-link.css");
-@import url("../blocks/header/lang-link/_eng/header__lang-link_eng.css");
+@import url("../blocks/header/lang-link/_active/header__lang-link_active.css");
 
 /*lead*/
 
@@ -29,6 +29,7 @@
 /*photo-grid*/
 
 @import url("../blocks/photo-grid/photo-grid.css");
+@import url("../blocks/photo-grid/__item/photo-grid__item.css");
 
 /*places*/
 
