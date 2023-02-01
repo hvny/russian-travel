@@ -1,0 +1,8 @@
+.header__lang-link {
+    color: #ffffff;
+    text-underline-offset: 5px;
+}
+
+.header__lang-link:hover {
+    opacity: 0.5;
+}
